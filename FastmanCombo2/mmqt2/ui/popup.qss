@@ -1,0 +1,33 @@
+#mainFrm {
+	border-width: 2px;
+	border-image: url(:/skins/skins/bg_windowbase_login.png) 8 8 8 8 repeat repeat;
+}
+
+#frm_title {
+	border-image: url(:/skins/skins/bg_header_login.png);
+}
+
+#lbl_title {
+	color: rgb(255, 255, 255);
+	font-size: 16pxpx; 
+	font-weight: bold
+}
+
+#btn_min {
+	width:30px; height:26px;
+	border-image:url(:/skins/skins/btn_win_min.png);
+}
+
+#btn_min:pressed {
+	border-image:url(:/skins/skins/btn_win_min_pressed.png);
+}
+		
+#btn_close {
+	width:30px; height:26px;
+	border-image:url(:/skins/skins/btn_win_close.png);
+}
+
+#btn_close:pressed {
+	width:30px; height:26px
+	border-image:url(:/skins/skins/btn_win_close_pressed.png);
+}	

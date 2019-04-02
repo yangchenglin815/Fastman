@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Package>
+    <DisplayName>增量更新</DisplayName>
+    <Description>增量更新</Description>
+    <Version>3.6.7</Version>
+    <ReleaseDate>2016-11-09</ReleaseDate>
+    <Default>true</Default>
+    <Script>installscript.qs</Script>
+    <ForcedInstallation>true</ForcedInstallation>
+</Package>

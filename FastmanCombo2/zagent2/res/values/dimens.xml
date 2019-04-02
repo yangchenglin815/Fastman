@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- start 屏幕适配使用间距及字体大小 start -->
+    <dimen name="activity_margin">15dp</dimen>
+    <dimen name="activity_margin_double">30dp</dimen>
+    <dimen name="listview_item_margin">10dp</dimen>
+    <dimen name="listview_item_margin_double">20dp</dimen>
+    <dimen name="topbar_margin">5dp</dimen>
+    <dimen name="topbar_margin_double">10dp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_medium">20sp</dimen>
+    <dimen name="text_size_normal">16sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_mini">8sp</dimen>
+
+</resources>

@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_grey"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp" >
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_icon" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="2dp" >
+
+        <ProgressBar
+            android:id="@+id/pb_notify_main"
+            style="@style/MainPbTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="14dp" />
+
+        <ProgressBar
+            android:id="@+id/pb_notify_sub"
+            style="@style/GreyPbTheme"
+            android:layout_width="fill_parent"
+            android:layout_height="14dp" />
+
+        <TextView
+            android:id="@+id/tv_notify"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/idle"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

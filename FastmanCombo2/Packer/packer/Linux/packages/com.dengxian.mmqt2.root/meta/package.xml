@@ -1,0 +1,31 @@
+<?xml version='1.0'?>
+<Package>
+    <DisplayName>秒装助手</DisplayName>
+    <Description>秒装助手是一款多线程安卓应用分发程序，支持多台设备并行分发。该程序使用Qt实现跨平台设计，支持Windows和Linux平台，为用户提供了PC端和安卓设备端的一体化解决方案。</Description>
+    <Description xml:lang="de_de">Qt GUI Bibliotheken</Description>
+    <Version>3.3.0</Version>
+    <ReleaseDate>2016-03-28</ReleaseDate>
+    <Name>www.dengxian.net</Name>
+    <!-- <Dependencies>www.dengxian.net</Dependencies> -->
+    <!-- <Virtual>false</Virtual> -->
+    <Licenses>
+        <License name="License Agreement" file="license.txt"/>
+    </Licenses>
+    <Script>installscript.qs</Script>
+    <UserInterfaces>
+        <UserInterface>readmecheckboxform.ui</UserInterface>
+    </UserInterfaces>
+    <!-- <Translations>
+        <Translation>sv_se.qm</Translation>
+        <Translation>de_de.qm</Translation>
+    </Translations>
+    <DownloadableArchives>component2.7z, component2a.7z</DownloadableArchives> -->
+    <AutoDependOn>www.dengxian.net</AutoDependOn>
+    <SortingPriority>123</SortingPriority>
+    <UpdateText>This changed compared to the last release</UpdateText>
+    <!-- <Default>false</Default>	 -->
+    <ForcedInstallation>true</ForcedInstallation>
+    <Essential>false</Essential>
+    <Replaces>www.dengxian.net</Replaces>
+    <RequiresAdminRights>true</RequiresAdminRights>
+</Package>

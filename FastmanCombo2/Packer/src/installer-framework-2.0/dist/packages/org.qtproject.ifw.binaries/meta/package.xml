@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<Package>
+    <DisplayName>Qt Installer Framework Binaries</DisplayName>
+    <Description>Installs the binaries, examples and help files.</Description>
+    <Version>2.0.2</Version>
+    <ReleaseDate>2015-06-16</ReleaseDate>
+    <Default>True</Default>
+</Package>

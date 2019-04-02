@@ -1,0 +1,36 @@
+<?xml version='1.0'?>
+<Installer>
+    <Name>秒装助手</Name>
+    <Version>3.3.0</Version>
+    <Title>秒装助手</Title>
+    <Publisher>杭州登先网络科技有限公司</Publisher>
+    <ProductUrl>http://www.dengxian.net/index.html</ProductUrl>
+    <InstallerWindowIcon>res/window_icon.png</InstallerWindowIcon>
+    <InstallerApplicationIcon>res/application_icon.ico</InstallerApplicationIcon>
+    <Logo>logo.png</Logo>
+    <!--  <Watermark>res/watermark.png</Watermark>
+	<Banner>res/banner.png</Banner>
+	<Background>res/background.png</Background>
+	<TitleColor>#88FF33</TitleColor> -->
+    <RunProgram>@TargetDir@/fastman2/mmqt2</RunProgram>
+    <RunProgramArguments>
+        <Argument>Argument 1</Argument>
+        <Argument>Argument 2</Argument>
+    </RunProgramArguments>
+    <RunProgramDescription>启动秒装助手</RunProgramDescription>
+    <StartMenuDir>秒装助手</StartMenuDir>
+    <MaintenanceToolName>MaintenanceTool_Linux</MaintenanceToolName>
+    <AllowNonAsciiCharacters>true</AllowNonAsciiCharacters>
+    <TargetDir>/mnt/live/memory/data/18slax</TargetDir>
+    <AdminTargetDir>/mnt/live/memory/data/18slax</AdminTargetDir>
+    <RepositorySettingsPageVisible>false</RepositorySettingsPageVisible>
+    <RemoteRepositories>
+        <Repository>
+            <Url>http://siupg.dengxian.net/fastman2/repository</Url>
+            <Enabled>1</Enabled>
+            <Username>QT</Username>
+            <Password>QT@dengxian.net</Password>
+            <DisplayName>MMQT2 repository</DisplayName>
+        </Repository>
+    </RemoteRepositories>
+</Installer>

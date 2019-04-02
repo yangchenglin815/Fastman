@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Google USB</string>
+    <string name="wlan_setting">WLAN</string>
+    <string name="idle">Idle</string>
+    <string name="btn_log">详情</string>
+    <string name="conn_lost">未连接PC</string>
+    <string name="conn_usb">已USB连接PC</string>
+    <string name="conn_wifi">已WIFI连接PC</string>
+    <string name="prefix_install">正在安装 </string>
+    <string name="install_success">安装成功</string>
+    <string name="install_failed">安装失败:</string>
+    <string name="hint_system_nospace">系统层可用空间不足，应用将安装至用户层</string>
+    <string name="hint_async_push_fail">拷贝失败，请检查日志</string>
+    <string name="hint_async_push_done">拷贝完成，请等待安装</string>
+    <string name="hint_async_install_finish">安装结束，开始上报</string>
+    <string name="hint_async_install_done">安装已完成</string>
+    <string name="hint_async_install_fail">部分安装失败，请检查日志</string>
+    <string name="hint_async_finish_unplup">可以拔线，等待安装结束</string>
+    <string name="hint_finish_poweroff">可以拔线，等待自启</string>
+    <string name="hint_async_finish_poweroff">推广应用，等待自启</string>
+    <string name="hint_async_report_failed">上报失败，检查日志</string>
+    <string name="hint_async_finish_start">已完成，可以关机</string>
+    <string name="title_activity_cmd">控制台测试</string>
+    <string name="menu_show_result">显示结果</string>
+    <string name="menu_clearlog">清空日志</string>
+    <string name="menu_quit">退出</string>
+    <string name="menu_upload_now">立即上报</string>
+    <string name="menu_upload_retry">重新上报</string>
+    <string name="menu_show_imei">显示IMEI</string>
+    <string name="device_admin_title">Google USB</string>
+    <string name="device_admin_hint">启用设备管理员权限以保障您的手机与PC端连接正常</string>
+    <string name="device_admin_cancel">真的要取消设备管理员权限吗，可能影响USB连接服务正常运行</string>
+    <string name="flash_light">手电筒</string>
+    <string name="flash_light_notvalid">您的手机可能不支持手电筒功能</string>
+
+</resources>

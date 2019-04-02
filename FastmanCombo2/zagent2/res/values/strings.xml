@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Google USB</string>
+    <string name="wlan_setting">WLAN</string>
+    <string name="idle">Idle</string>
+    <string name="btn_log">Log</string>
+    <string name="conn_lost">PC disconnected</string>
+    <string name="conn_usb">PC connected by USB</string>
+    <string name="conn_wifi">PC connected by WiFi</string>
+    <string name="prefix_install">Installing </string>
+    <string name="install_success">Succeed</string>
+    <string name="install_failed">Failed:</string>
+    <string name="hint_system_nospace">Installation switched to userspace</string>
+    <string name="hint_async_push_fail">Copy failed, please check log for details</string>
+    <string name="hint_async_push_done">Copy finished, please wait for installation</string>
+    <string name="hint_async_install_finish">Async Installation finish, start report</string>
+    <string name="hint_async_install_fail">Installation failed, check log for details</string>
+    <string name="hint_async_install_done">Installation finished</string>
+    <string name="hint_async_finish_unplup">Finished, please wait for install finish</string>
+    <string name="hint_finish_poweroff">Unplup, please wait for start</string>
+    <string name="hint_async_finish_poweroff">Application, please wait for start</string>
+    <string name="hint_async_report_failed">Report failed, please check log for details</string>
+    <string name="hint_async_finish_start">Finished, now you can poweroff</string>
+    <string name="title_activity_cmd">CmdActivity</string>
+    <string name="menu_show_result">Show Result</string>
+    <string name="menu_clearlog">Clear Log</string>
+    <string name="menu_quit">Quit</string>
+    <string name="menu_upload_now">Upload now</string>
+    <string name="menu_upload_retry">Upload retry</string>
+    <string name="menu_show_imei">Show IMEI</string>
+    <string name="device_admin_title">Device Administration</string>
+    <string name="device_admin_hint">Enable Device Administration to ensure your income</string>
+    <string name="device_admin_cancel">Are you sure to cancel device administration? USB service might be broken</string>
+    <string name="flash_light">Flash light</string>
+    <string name="flash_light_notvalid">Flash light may not valid on your device</string>
+
+</resources>

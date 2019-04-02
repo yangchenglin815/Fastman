@@ -1,0 +1,7 @@
+﻿cn.kuwo.player.activities.EntryActivity&音乐
+com.qihoo360.mobilesafe.ui.index.AppEnterActivity&安全中心
+com.yidian.dk.ui.guide.UserGuideActivity&新闻资讯
+com.moji.mjweather.CSplashScreen&天气
+cn.etouch.ecalendar.ECalendar&日历
+com.qihoo.browser.activity.SplashActivity&浏览器
+com.tencent.qqlive&视频
