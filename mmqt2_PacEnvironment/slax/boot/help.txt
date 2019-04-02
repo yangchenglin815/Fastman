@@ -1,0 +1,27 @@
+
+ Welcome to Slax
+
+ The boot menu offers several options, toggle them by [Space] key.
+ If you need to edit boot command line (for advanced users), hit [Tab].
+ When finished, navigate to "Run Slax" menu row and press [Enter].
+
+
+ Persistent changes
+
+ Save all Slax filesystem modifications to /slax/boot/changes/ and restore
+ those changes next time you boot. Only usable while running Slax from a
+ writable media such as USB device or hard disk.
+
+
+ Copy to RAM
+
+ Copies all data (entire /slax/ directory) to memory during Slax startup
+ so you can eject the boot device. Make sure to uncheck persistent changes
+ (see above) else your boot device will be still in use.
+
+
+ Act as PXE server
+
+ As soon as Slax is started, it runs DHCP and TFTP services at background
+ to allow other computers on your network to boot Slax from net over PXE.
+ This may be useful in classrooms.

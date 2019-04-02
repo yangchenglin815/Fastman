@@ -1,0 +1,200 @@
+Slax 7.0.8 (16th of March 2013)
+
+- Apparently the plasma panel was not fully fixed yet,
+  so this release really fixes it. I HOPE! :)
+
+
+Slax 7.0.7 (15th of March 2013)
+
+- Fixed plasma panel width
+- improved look of the default desktop
+
+
+Slax 7.0.6 (13th of March 2013)
+
+- Upgraded to Linux Kernel 3.8.2
+- Upgraded KDE to version 4.10.1
+- Fixed missing notification when module is activated or deactivated
+- Upgraded all packages to reflect changes in Slackware-current
+- Show date on taskbar under current time
+- Updated FireFox to 19.0.2
+- The device notifier in KDE is now hidden since it was showing on mad positions. KDE bug has been submitted, nobody cares, so I hid it.
+
+
+Slax 7.0.5 (27th of January 2013)
+
+- added udev rules to make X cursor use vmmouse driver if Slax is
+  running in vmware. This enables automatic grab/ungrab of the cursor by
+  the virtual machine.
+
+- ksnapshot now fedaults to "Window under cursor" capture more, and
+  supports "sending" the screenshot directly to Slax server (using
+  'Share Image' option in the Send actions). When selected, it asks
+  for Slax module name to which the screenshot should be assigned.
+  All submitted screenshots will be reviewed by a moderator, of course.
+
+- KDE configured to require password when X restarts.
+
+- Updated to KDE 4.9.5
+
+- Upgraded to FireFox 18.0.1
+
+- Improved functionality of Slax activate/deactivate
+
+
+
+Slax 7.0.4 (15th of January 2013)
+
+- better bootinst.sh compatibility with ubuntu and clones
+
+- PXE now tries to get Slax data over TFTP (from the same server)
+  if http connection to port 7529 fails
+
+- added support for load= and noload= boot parameters which act as
+  regex filters
+
+- fixed korean support (added missing font to korean module)
+
+- fixed URL open in KDE (using %u in exec command in firefox.desktop).
+  Thanks to Manfred M. <http://www.fluxflux.net/>
+
+- fixed a bug when using from=... to load Slax from a path which
+  included a directory with only two letters, like /os/
+
+- support for special files in Slax Bundles. Content of file
+  /run/activate.sh gets executed on activate, content of
+  /run/deactivate.sh gets executed on module deactivation.
+  File attributes don't matter at all.
+
+- the autobuild system now adds a file /run/requires to all modules
+  which require other modules. This file is used by 'slax activate'
+  command to activate all dependencies automatically.
+
+- even more improved X autodetection. Tries to fallback to modesetting
+  driver if X -configure fails to produce a working xorg.conf file,
+  and fallbacks to vesa driver if modesetting is not available.
+
+- deactivate of Slax module now removes the module file, unless
+  you deactivate it with the real filename as argument - then it is kept
+
+- added unRAR support (compiled from official unrar sources)
+
+- provide rightclick menu option to activate / deactivate Slax bundles
+
+- hide loop devices from showing in dolphin by udev rule
+
+- buildscript now requires description, it is no longer optional
+
+
+
+Slax 7.0.3 (2nd of January 2013)
+
+- added PXE server and client support. Run 'pxe' command to start
+  the PXE server on Slax
+
+- added dnsmasq in preparation for PXE functionality
+
+- added httpd support to busybox
+
+- improved X autodetection by calling X -configure if default
+  configuration fails
+
+- added xev, a simple yet useful command to list code of pressed key, so
+  one can remap it later using xmodmap
+
+- bashrc file has been fixed to properly show current directory on
+  command prompt
+
+- fixed cleanup of 'slax' script (remove temporary files from /tmp)
+
+- fixed buildscipt checks to allow required bundles with + and _
+  characters in name
+
+- added PDF file with Slax documentation
+
+- fixed deb2sb (and deb2txz) script to properly unpack lzma-compressed
+  debian package content, thanks to Manfred M. <http://www.fluxflux.net/>
+
+- slax activate now runs kbuildsycoca4 to regenerate KDE menu if
+  *.desktop files are detected in the bundle, thanks to Manfred M.
+  <http://www.fluxflux.net/>
+
+- include mc.sh in bashrc so midnight commander remembers last directory
+  on restart, thanks to Manfred M. <http://www.fluxflux.net/>
+
+
+
+Slax 7.0.2 (24th of December 2012)
+
+- Removed forgotten stuff from firefox module which made Slax 1MB bigger than before, thanks distrowatch
+  for listing the ISO size which reminded me that 213MB is far far bigger than I want Slax to be.
+
+
+
+Slax 7.0.1 Green Hornet (23rd of December 2012)
+
+- Fixed doubleclick on location bar in firefox - it maximized the window, now it doesn't do that
+- Fixed a problem with slax buildscript command, download of buildscript didn't work in a subdirectory with spaces
+- Introduced bashrc with colors for konsole, thanks to Prcek for suggestion
+- xterm no longer needs helper in xterm.bin, hooray
+- allow underscore and plus sign characters in buildscript name, due to packages such as g++ or wpa_supplicant
+- buildscript now supports function call 'strip_unneeded_objects' which strips binaries in slax bundle target dir
+- buildscript now supports SLAX_64_FLAG variable which is set to "64" on x86_64 arch, else it is empty
+- updated flags for Catalan, Arabic and Chinese Tradidional according to request from users
+- added support for textmode international character input and font for it, pt, ru, uk, fr, pl, cs, de
+- fixed deactivation of modules which were activated automatically during boot (it didn't free the loop device)
+- upgraded to Linux Kernel 3.6.11, added broadcom driver for SoftMac, thanks to MarkDS for suggestion
+
+
+
+Slax 7.0 Green Horn (10th of December 2012)
+
+- run the bootinst script even if UID is empty
+- added better deb2sb support to convert Ubuntu/Debian package into Slax bundle,
+  it works even without dpkg tools. Big thanks to Manfred M. <http://www.fluxflux.net/>
+- updated to KDE 4.9.4, including language translations update
+- removed support for Indonesian language since it is no longer available for KDE and added support for Hindi language
+- fixed desktop icon location (user guide), will download a 100KB PDF file from Slax server
+- made firefox tabs into title bar like it is in chromium
+
+
+
+Slax 7.0 RC3:
+
+- added 'slax' script which provides slax module management features, such as 'slax activate'
+- destroy phonon device cache each time on boot to avoid unwanted error warnings about missing devices
+- configure firefox to stop complaining if user goes from secure page to unsecure one
+- make sMplayer put subtitles to borders under the video in fullscreen mode
+- bootscript fixes to avoid segmentation fault if script is started in text-mode (no X)
+- bootinst script print error message if user has insufficient privileges to install bootloader
+- fixed /dev/null permissions (the device file was removed and recreated as regular file by kdm)
+- fixed /etc permissions in kde bundle
+- added some smallest firmware drivers from linux-firmware package, including radeon firmware and some wifi drivers
+- support from=/path/slax.iso boot parameter to load slax data from the given iso file
+- fixed copy to ram feature to work when from= is used
+- added nosound boot parameter
+- language modules to provide Slax localized into more than 55 languages
+- firefox set as default browser, dolphin set to display detailed file properties
+- removed few unnecessary sounds
+- Firefox style improvements, Slax software center and User Guide manual
+- fixed mcedit file position history, it didn't save it for the first edited file
+- added module tools such as sb2dir, deb2sb, txz2sb
+- removed most 64px icons, but reverted back to some 128px ones which were used in applications like krfb and krdc
+- added development module. Total Slax size is now around 210MB (for 32bit)
+
+
+Slax 7.0 RC2:
+
+- fixed bootinst.sh (typo in realpath call)
+- bootinst.bat is now universal boot installer, you can run it even in Linux (it will actually execute bootinst.sh)
+- rewritten bootinst.sh so it works even on systems where USB drive is mounted with showexec parameter (default for Slax too)
+- added ModemManager
+- added support for mounting Windows shares in KDE
+- updated KDE to version 4.9.3
+- updated juk/kmix version (was from older KDE multimedia package)
+- removed zeroconf:// from Network services since it's not working at all (and I don't want it to work)
+- added mobile-broadband-provider-info
+- fixed flashplayer dependencies on 32bit architecture (missing libcurl and libldap)
+- autoeject CD during Slax shutdown if we're actually started from CD
+- added libnotify as required by firefox and libcms as required by libmng
+- gnome-keyring replaced by libgnome-keyring, this fixes missing libgnomekeyring deps
